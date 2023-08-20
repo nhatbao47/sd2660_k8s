@@ -10,7 +10,7 @@ pipeline {
                     sh "kubectl apply -f mongodb.yaml"
                     sh "kubectl apply -f backend.yaml"
                     sh "kubectl apply -f frontend.yaml"
-                    sh "kubectl apply -f ingress.yaml"
+                    sh "kubectl apply -f ingress.yml"
                 }
             }
         }
